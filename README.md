@@ -1,10 +1,10 @@
 ## Objective
 
-The objective of this repository is to illustrate how to use a WKWebView
+The objective of this repository is to illustrate how to use a `WKWebView`
 component to access a page integrating with Viafoura in order to use the social
 login capability Viafoura provides.
 
-When developing an app in iOS that includes a WKWebView component, a few
+When developing an app in iOS that includes a `WKWebView` component, a few
 additional steps are needed to ensure that the social login functionality that
 Viafoura provides functions properly.
 
@@ -13,16 +13,16 @@ includes source code examples.
 
 ## Why
 
-The iOS WKWebView component provides a subset of the functionality of the iOS
+The iOS `WKWebView` component provides a subset of the functionality of the iOS
 Safari browser, and provides a means to navigate to and control a web page. The
-WKWebView's behavior deviates from regular browsers in the way that it manages
+`WKWebView`'s behavior deviates from regular browsers in the way that it manages
 popup windows.
 
-The WKWebView component's management of popup windows is not the same as typical
-browsers such that a popup window is loaded in place of the current document.
-Rather than opening a popup in a separate window, the WKWebView replaces the
-current page with the popup content, while not retaining an 'opener' link to the
-original page.
+The `WKWebView` component's management of popup windows is not the same as
+typical browsers such that a popup window is loaded in place of the current
+document. Rather than opening a popup in a separate window, the `WKWebView`
+replaces the current page with the popup content, while not retaining an
+'opener' link to the original page.
 
 Viafoura's social login process requires a popup window to manage the
 authentication process with the appropriate social network. Once the social
